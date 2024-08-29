@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    {% if courses %}
+        <ul>
+        {% for course in courses %}
+            <h2><li><a href="{% url 'courses:in_detail' course.id %}">{{ course.title }}</a> - Rate: {{ course.rate }}</li></h2>
+            
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+    
+</body>
+</html>

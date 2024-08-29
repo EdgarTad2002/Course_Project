@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <form action="{% url 'courses:rate_course' course.id%}" method="post">
+        {% csrf_token %}
+        {% if error_message %}
+            <p><strong>{{ error_message }}</strong></p>
+        {% endif %}  
+        <label for="new_rate">Enter your rating for course {{ course.title }}:</label>
+        <br><br>
+        <input type="number" name="new_rate" id="new_rate" step="1" min="0" max="10" required>
+        <br><br>
+        <button type="submit">Submit Rating</button>
+        
+        
+</body>
+</html>
