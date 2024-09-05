@@ -1,0 +1,61 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* General body styling */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Course title styling */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+/* Course description styling */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center;
+}
+
+/* Course rating styling */
+h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}

@@ -1,0 +1,65 @@
+/* Reset some default styling */
+body, ul, li, h2, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Styling the unordered list */
+ul {
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+/* Styling each list item */
+li {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling the links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Adding hover effect to list items */
+li:hover {
+    background-color: #f0f8ff;
+}
+
+/* Styling for the rate text */
+li::after {
+    content: attr(data-rate);
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Styling for the "No polls are available" text */
+p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px;
+    text-align: center;
+}
